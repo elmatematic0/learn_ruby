@@ -55,9 +55,11 @@ end
 describe "#multiply" do
 
   it "multiplies two numbers" do 
+    multiply([10,10]).should == 100
   end
 
   it "multiplies several numbers" do
+    multiply([3,5,2]).should == 30
   end
 
 end
@@ -66,17 +68,22 @@ end
 describe "#factorial" do
 
   it "computes the factorial of 0" do
+    fact(0).should == 1
   end
 
   it "computes the factorial of 1" do
+    fact(1).should == 1
   end
 
   it "computes the factorial of 2" do
+    fact(2).should == 2
   end
 
   it "computes the factorial of 5" do 
+    fact(5).should == 120
   end
 
   it "computes the factorial of 10" do 
+    fact(10).should == 3628800
   end
 end
