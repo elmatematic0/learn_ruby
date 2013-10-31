@@ -4,18 +4,18 @@ class Book
 
 
 
-  def title=(name)
-        @name = name
+  def title=(test)
+        @food = test
   end
   
   def title
     
     
-    if @name.split(' ').map { |x| x }.length <= 2
-      @name.split(' ').map {|each_word| each_word.capitalize }.join(' ')
+    if @food.split(' ').map { |x| x }.length <= 2
+      @food.split(' ').map {|each_word| each_word.capitalize }.join(' ')
         else
         lowercase_words = %w{in a an the and but or for nor of over}  #puts words into an array
-        array_of_words = @name.split(' ')
+        array_of_words = @food.split(' ')
         new_array = []
         array_of_words.each_with_index do |word, index|
           if lowercase_words.include?(word) && index > 0
