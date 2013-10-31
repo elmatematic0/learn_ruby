@@ -1,5 +1,6 @@
 class Temperature
-  def initialize(hash = {})
+
+  def initialize (hash = {})
     @hash = hash
   end
 
@@ -26,6 +27,7 @@ class Temperature
   def self.in_fahrenheit(num)
     Temperature.new({f:num})
   end
+
 end
 
 class Celsius < Temperature
@@ -40,6 +42,7 @@ class Celsius < Temperature
   def to_fahrenheit
     (@temp * (9.0 / 5.0)) + 32
   end
+
 end
 
 class Fahrenheit < Temperature
@@ -53,5 +56,5 @@ class Fahrenheit < Temperature
 
   def to_fahrenheit
     @temp
-  end
+  end 
 end
