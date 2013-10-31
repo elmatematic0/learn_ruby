@@ -1,15 +1,14 @@
 class Array
-
+  
   def sum
-    self.inject(0){|total, num| total + num }
+    self.reduce(0, :+)    
   end
 
   def square
-    map { |num| num ** 2 }
+    self.each_with_object([]) {|item, index| index<< item**2}
   end
 
   def square!
-    map! { |num| num ** 2 }
+    self.map! { |item| item**2}
   end
-
 end
