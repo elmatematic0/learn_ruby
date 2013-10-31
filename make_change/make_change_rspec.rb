@@ -1,4 +1,4 @@
-require 'rspec'
+
 require 'make_change'
 
 describe Changer do
